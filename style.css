@@ -1,0 +1,201 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf4ff, #dbeafe);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #123c69;
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #123c69;
+}
+
+
+/* Add Student Form */
+
+.form-container {
+    background-color: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.form-container input:focus,
+.search-container input:focus {
+    outline: none;
+    border-color: #123c69;
+}
+
+
+/* Buttons */
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 7px;
+    background-color: #123c69;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#addButton {
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+/* Search */
+
+.search-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.search-container input {
+    width: 60%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#clearSearchButton {
+    background-color: #555;
+}
+
+
+/* Table */
+
+.table-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #123c69;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+
+/* Action Buttons */
+
+.edit-button {
+    background-color: #2878a8;
+    margin-right: 5px;
+}
+
+.delete-button {
+    background-color: #c0392b;
+}
+
+
+/* Empty Message */
+
+.empty-message {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+
+    .search-container button {
+        margin-top: 10px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+        font-size: 13px;
+    }
+}

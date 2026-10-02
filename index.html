@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+        <p class="subtitle">Manage student records easily</p>
+
+        <!-- Add Student Form -->
+        <div class="form-container">
+
+            <h2>Add Student</h2>
+
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" id="rollNumber" placeholder="Enter roll number">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email">
+
+            <button id="addButton">Add Student</button>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="search-container">
+
+            <h2>Search Student</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by name or roll number"
+            >
+
+            <button id="searchButton">Search</button>
+            <button id="clearSearchButton">Clear</button>
+
+        </div>
+
+
+        <!-- Student List -->
+        <div class="table-container">
+
+            <h2>Student List</h2>
+
+            <table id="studentTable">
+
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll Number</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
